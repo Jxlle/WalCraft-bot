@@ -1,1 +1,1 @@
-node bot.js
+eyzalts: node bot.js
