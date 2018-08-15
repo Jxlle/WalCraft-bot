@@ -83,8 +83,21 @@ client.on("message", async message => {
     message.reply("----------------------------------------------------------------------");
   }
   
-   if (message == "-status") {
-    message.reply(status);
+  if (message == "-status") {    
+     if (status == "Server Offline") {
+           message.reply("WalCraft is offline.");
+     }
+     else {
+       message.reply("WalCraft is online.");
+     }
+  }
+  
+  if (message == "-status") {   
+    message.reply("There are currently " + status + " players online.")
+  }
+  
+  if (message == "-version") {    
+    message.reply("Minecraft 1.13")
   }
  
 });
