@@ -72,18 +72,15 @@ client.on("ready", () => {
 
 client.on("message", async message => {
   
-  //if (message.author.bot) return;
-  //if (message.content.indexOf(prefix) !== 0) return;
+  if (message.author.bot) return;
+  if (message.content.indexOf(prefix) !== 0) return;
   
-  //var command = message.toLowerCase();
+  var command = message.toLowerCase();
   
-  /*if (command == "test") {
-    message.channel.send("test");
-  }*/
-  
-  if (message == "test") {
-    message.reply("test2");
+  if (command == "-help") {
+    message.channel.send("-----HELP-----\n-status: Gives the WalCraft server status.\n-version: Shows the Minecraft version on the server.\n-players: Shows the amount of players on the server."\n---------------);
   }
+ 
 });
 
 client.login("NDczOTgzOTMxOTY4OTEzNDEx.DkJ5zw.HWOaFXWer_Yv81FyriXfcg-qRxg");
