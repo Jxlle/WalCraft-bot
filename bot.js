@@ -75,7 +75,7 @@ client.on("message", async message => {
   if (message.author.bot) return;
   if (message.content.indexOf(prefix) !== 0) return;
   
-  var command = message.content.toLowerCase();
+  var command = message.toLowerCase();
   
   if (command == "-help") {
     message.reply("-----HELP-----\n-status: Gives the WalCraft server status.\n-version: Shows the Minecraft version on the server.\n-players: Shows the amount of players on the server."\n---------------);
