@@ -67,7 +67,7 @@ function update() {
 client.on("ready", () => {
   
   console.log("I am ready!");
-  client.setInterval(update,20000);
+  client.setInterval(update,60000);
 });
 
 client.on("message", async message => {
