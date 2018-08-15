@@ -106,7 +106,7 @@ client.on("message", async message => {
   }
   
   if (message == "-test") {    
-    message.channel.send("Test1 \\n Test2")
+    message.channel.send("Test1 \n Test2")
   }
 });
 
