@@ -71,11 +71,15 @@ client.on("ready", () => {
 
 client.on("message", async message => {
   
-  //if (message.author.bot) return;
-  //if (message.content.indexOf(prefix) !== 0) return;
+  if (message.author.bot) return;
+  if (message.content.indexOf(prefix) !== 0) return;
   
   if (message == "-help") {
-    message.reply("-----HELP-----\n-status: Gives the WalCraft server status.\n-version: Shows the Minecraft version on the server.\n-players: Shows the amount of players on the server."\n---------------);
+    message.reply("-----HELP-----");
+    message.reply("-status: Gives the WalCraft server status.");
+    message.reply("-version: Shows the Minecraft version on the server.");
+    message.reply("-players: Shows the amount of players on the server.");
+    message.reply("---------------");
   }
  
 });
