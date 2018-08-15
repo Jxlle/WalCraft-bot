@@ -76,8 +76,7 @@ client.on("message", async message => {
   if (message.content.indexOf(prefix) !== 0) return;
   
   if (message == "-help") {
-    message.channel.send("-----**HELP**-------------------------------------------------------------");
-    message.channel.send("-about: Information about the bot.");
+    message.channel.send("-----**HELP**------------------------------------------------------------- \n-about: Information about the bot.");
     message.channel.send("-status: Gives the WalCraft server status.");
     message.channel.send("-version: Shows the Minecraft version on the server.");
     message.channel.send("-players: Shows the amount of players on the server.");
@@ -103,10 +102,6 @@ client.on("message", async message => {
  
   if (message == "-about") {    
     message.channel.send("This bot is used to check the status of **WalCraft.biz.tm**. It updates every **5** minutes.")
-  }
-  
-  if (message == "-test") {    
-    message.channel.send("Test1 \n Test2")
   }
 });
 
