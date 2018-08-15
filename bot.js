@@ -21,29 +21,37 @@ function update() {
   .catch(console.error);*/
   
   request(url, function(err, response, body) {
+    
       if(err) {
           console.log(err);
-          //return message.reply('Error getting Minecraft server status...');
       }
+    
       body = JSON.parse(body);
       var status = 'Server offline';
       console.log(body.motd);
+    
       if(body.online) {
+        
           if((body.motd=="&cWe are under maintenance.")||(body.players.now>=body.players.max)){
+            
             client.user.setStatus('idle')
-            //.then(console.log)
             .catch(console.error);
+            
           }else{
+            
             client.user.setStatus('online')
-            //.then(console.log)
             .catch(console.error);
           }
             if(body.players.now) {
+              
                 status = ' ' + body.players.now + '  of  ' + body.players.max;
+              
               } else {
+                
                 status = ' 0  of  ' + body.players.max;
         }
       } else {
+        
         client.user.setStatus('dnd')
         //.then(console.log)
         .catch(console.error);
@@ -64,7 +72,7 @@ client.on("ready", () => {
 
 client.on("message", async message => {
   
-  if (message.author.bot) return;
+  //if (message.author.bot) return;
   //if (message.content.indexOf(prefix) !== 0) return;
   
   var command = message.toLowerCase();
