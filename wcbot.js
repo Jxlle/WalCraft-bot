@@ -77,6 +77,7 @@ client.on("message", async message => {
   
   if (message == "-help") {
     message.channel.send("-----HELP-------------------------------------------------------------");
+    message.channel.send("-about: Information about the bot.");
     message.channel.send("-status: Gives the WalCraft server status.");
     message.channel.send("-version: Shows the Minecraft version on the server.");
     message.channel.send("-players: Shows the amount of players on the server.");
@@ -100,6 +101,9 @@ client.on("message", async message => {
     message.channel.send("Minecraft 1.13")
   }
  
+  if (message == "-about") {    
+    message.channel.send("This bot is used to check the status of **WalCraft.biz.tm**. It updates every 5 minutes.")
+  }
 });
 
 client.login("NDczOTgzOTMxOTY4OTEzNDEx.DkJ5zw.HWOaFXWer_Yv81FyriXfcg-qRxg");
