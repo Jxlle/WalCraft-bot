@@ -6,6 +6,7 @@ var statustring = "No signal";
 var request = require('request');
 var mcCommand = '/minecraft'; // Command for triggering
 var mcIP = 'WalCraft.biz.tm'; // Your MC server IP
+var prefix = '-';
 var mcPort = 25565; // Your MC server port
 
 var url = 'http://mcapi.us/server/status?ip=' + mcIP + '&port=' + mcPort;
@@ -57,12 +58,16 @@ client.on("ready", () => {
   client.setInterval(update,5000);
 });
 
-/*client.on("message", (message) => {
-  if (message.content.startsWith("ping")) {
-    message.channel.send("pong!");
-    update();
+client.on("message", (message) => {
+  
+  if (message.author.bot) return;
+  if (message.content.indexOf(prefix) !== 0) return;
+  
+  var command = message.toLowerCase();
+  
+  if (command == "-help") {
+    message.channel.send("test");
   }
-}
-);*/
+});
 
 client.login("NDczOTgzOTMxOTY4OTEzNDEx.DkJ5zw.HWOaFXWer_Yv81FyriXfcg-qRxg");
