@@ -75,11 +75,11 @@ client.on("message", async message => {
   if (message.content.indexOf(prefix) !== 0) return;
   
   if (message == "-help") {
-    message.reply("-----HELP-----");
+    message.reply("-----HELP-------------------------------------------------------------");
     message.reply("-status: Gives the WalCraft server status.");
     message.reply("-version: Shows the Minecraft version on the server.");
     message.reply("-players: Shows the amount of players on the server.");
-    message.reply("---------------");
+    message.reply("----------------------------------------------------------------------");
   }
  
 });
