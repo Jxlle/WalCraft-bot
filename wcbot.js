@@ -72,7 +72,7 @@ client.on("ready", () => {
 
 client.on("message", async message => {
   
-  if (message.author.bot) return;
+  //if (message.author.bot) return;
   //if (message.content.indexOf(prefix) !== 0) return;
   
   if (message == "-help") {
