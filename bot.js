@@ -75,11 +75,11 @@ client.on("message", async message => {
   //if (message.author.bot) return;
   //if (message.content.indexOf(prefix) !== 0) return;
   
-  var command = message.toLowerCase();
+  //var command = message.toLowerCase();
   
-  if (command == "test") {
+  /*if (command == "test") {
     message.channel.send("test");
-  }
+  }*/
   
   if (message == "test") {
     message.channel.send("test2");
