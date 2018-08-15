@@ -1,4 +1,3 @@
-//credit to vegeta897 for the request URL part from his 'Simple Minecraft server status bot'
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var statustring = "No signal";
