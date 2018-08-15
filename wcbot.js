@@ -104,6 +104,10 @@ client.on("message", async message => {
   if (message == "-about") {    
     message.channel.send("This bot is used to check the status of **WalCraft.biz.tm**. It updates every **5** minutes.")
   }
+  
+  if (message == "-test") {    
+    message.channel.send("Test1 \\n Test2")
+  }
 });
 
 client.login("NDczOTgzOTMxOTY4OTEzNDEx.DkJ5zw.HWOaFXWer_Yv81FyriXfcg-qRxg");
