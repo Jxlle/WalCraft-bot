@@ -78,7 +78,7 @@ client.on("message", async message => {
   var command = message.content.toLowerCase();
   
   if (command == "-help") {
-    message.channel.send("-----HELP-----\n-status: Gives the WalCraft server status.\n-version: Shows the Minecraft version on the server.\n-players: Shows the amount of players on the server."\n---------------);
+    message.reply("-----HELP-----\n-status: Gives the WalCraft server status.\n-version: Shows the Minecraft version on the server.\n-players: Shows the amount of players on the server."\n---------------);
   }
  
 });
