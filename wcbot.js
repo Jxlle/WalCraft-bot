@@ -6,6 +6,7 @@ var request = require('request');
 var mcCommand = '/minecraft'; // Command for triggering
 var mcIP = 'WalCraft.biz.tm'; // Your MC server IP
 var prefix = '-';
+var status = '';
 var mcPort = 25565; // Your MC server port
 
 var url = 'http://mcapi.us/server/status?ip=' + mcIP + '&port=' + mcPort;
@@ -26,7 +27,7 @@ function update() {
       }
     
       body = JSON.parse(body);
-      var status = 'Server offline';
+      status = 'Server offline';
       console.log(body.motd);
     
       if(body.online) {
@@ -80,6 +81,10 @@ client.on("message", async message => {
     message.reply("-version: Shows the Minecraft version on the server.");
     message.reply("-players: Shows the amount of players on the server.");
     message.reply("----------------------------------------------------------------------");
+  }
+  
+   if (message == "-status") {
+    message.reply(status);
   }
  
 });
