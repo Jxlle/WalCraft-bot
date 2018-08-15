@@ -92,7 +92,7 @@ client.on("message", async message => {
      }
   }
   
-  if (message == "-status") {   
+  if (message == "-players") {   
     message.reply("There are currently " + status + " players online.")
   }
   
