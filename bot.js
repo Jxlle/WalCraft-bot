@@ -82,7 +82,7 @@ client.on("message", async message => {
   }*/
   
   if (message == "test") {
-    message.channel.send("test2");
+    message.reply("test2");
   }
 });
 
