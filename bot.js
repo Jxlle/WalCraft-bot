@@ -58,7 +58,7 @@ client.on("ready", () => {
   client.setInterval(update,5000);
 });
 
-client.on("message", (message) => {
+client.on("message", async message => {
   
   if (message.author.bot) return;
   if (message.content.indexOf(prefix) !== 0) return;
