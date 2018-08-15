@@ -76,28 +76,28 @@ client.on("message", async message => {
   if (message.content.indexOf(prefix) !== 0) return;
   
   if (message == "-help") {
-    message.reply("-----HELP-------------------------------------------------------------");
-    message.reply("-status: Gives the WalCraft server status.");
-    message.reply("-version: Shows the Minecraft version on the server.");
-    message.reply("-players: Shows the amount of players on the server.");
-    message.reply("----------------------------------------------------------------------");
+    message.channel.send("-----HELP-------------------------------------------------------------");
+    message.channel.send("-status: Gives the WalCraft server status.");
+    message.channel.send("-version: Shows the Minecraft version on the server.");
+    message.channel.send("-players: Shows the amount of players on the server.");
+    message.channel.send("----------------------------------------------------------------------");
   }
   
   if (message == "-status") {    
      if (status == "Server Offline") {
-           message.reply("WalCraft is offline.");
+           message.channel.send("WalCraft is offline.");
      }
      else {
-       message.reply("WalCraft is online.");
+       message.channel.send("WalCraft is online.");
      }
   }
   
   if (message == "-players") {   
-    message.reply("There are currently" + status + " players online.")
+    message.channel.send("There are currently" + status + " players online.")
   }
   
   if (message == "-version") {    
-    message.reply("Minecraft 1.13")
+    message.channel.send("Minecraft 1.13")
   }
  
 });
