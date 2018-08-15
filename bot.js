@@ -65,8 +65,12 @@ client.on("message", async message => {
   
   var command = message.toLowerCase();
   
-  if (command == "-help") {
+  if (command == "test") {
     message.channel.send("test");
+  }
+  
+  if (message == "test") {
+    message.channel.send("test2");
   }
 });
 
