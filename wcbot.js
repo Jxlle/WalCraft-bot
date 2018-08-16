@@ -80,7 +80,7 @@ client.on("message", async message => {
   }
   
   if (message == "-status") {    
-     if (status == "Server Offline") {
+     if (status == "Server offline") {
            message.channel.send("WalCraft is offline.");
      }
      else {
@@ -89,7 +89,12 @@ client.on("message", async message => {
   }
   
   if (message == "-players") {   
-    message.channel.send("There are currently" + status + " players online.")
+     if (status == "Server offline") {
+       message.channel.send("There are currently no players online.")
+     }
+     else {
+       message.channel.send("There are currently" + status + " players online.")
+     }
   }
   
   if (message == "-version") {    
