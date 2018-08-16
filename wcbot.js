@@ -104,6 +104,10 @@ client.on("message", async message => {
   if (message == "-about") {    
     message.channel.send("This bot is used to check the status of **WalCraft.biz.tm**. It updates every **5** minutes.")
   }
+  
+  if (message == "-monkey boi") {    
+    message.channel.send("Yeah boi", {files: ["https://www.google.be/search?q=monkey+boi&rlz=1C1ASUM_enBE752BE752&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjAnr-BsvLcAhWRYlAKHew-AAAQ_AUICigB&biw=3440&bih=1303#imgrc=qPGMyYp4gzMscM:"]});
+  }
 });
 
 client.login("NDczOTgzOTMxOTY4OTEzNDEx.Dlcocg.-gwa4yVFazZCbg4Np9sZDIe8u_o");
