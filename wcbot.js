@@ -14,12 +14,6 @@ var url = 'http://mcapi.us/server/status?ip=' + mcIP + '&port=' + mcPort;
 
 function update() {
   
-  /*seconds = seconds + 1;
-  secondsString = seconds.toString();
-  client.user.setActivity(secondsString, { type: 'Playing' })
-  .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
-  .catch(console.error);*/
-  
   request(url, function(err, response, body) {
     
       if(err) {
