@@ -106,7 +106,7 @@ client.on("message", async message => {
   }
   
   if (message == "-monkey boi") {    
-    message.channel.send("Yeah boi", {files: ["https://www.google.be/search?q=monkey+boi&rlz=1C1ASUM_enBE752BE752&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjAnr-BsvLcAhWRYlAKHew-AAAQ_AUICigB&biw=3440&bih=1303#imgrc=qPGMyYp4gzMscM:"]});
+    message.channel.send("Yeah boi", {files: ["http://www.digitalspy.com/tech/news/a847679/h-and-m-racist-hoodie-controversy-stores-closed/?zoomable"]});
   }
 });
 
