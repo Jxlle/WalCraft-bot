@@ -104,10 +104,6 @@ client.on("message", async message => {
   if (message == "-about") {    
     message.channel.send("This bot is used to check the status of **WalCraft.biz.tm**. It updates every **5** minutes.")
   }
-  
-  if (message == "-monkey boi") {    
-    message.channel.send("Yeah boi", {files: ["http://www.digitalspy.com/tech/news/a847679/h-and-m-racist-hoodie-controversy-stores-closed/?zoomable"]});
-  }
 });
 
 client.login("NDczOTgzOTMxOTY4OTEzNDEx.Dlcocg.-gwa4yVFazZCbg4Np9sZDIe8u_o");
